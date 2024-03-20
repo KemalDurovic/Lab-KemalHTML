@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="200;url=login.php">
     <title>User Registration</title>
 </head>
 <style>
@@ -48,8 +49,8 @@ label {
         .register-btn {
             padding: 10px 20px; /* Adjust padding as needed */
             border-radius: 4px;
-            background-color: #beccbf; /* Green background color */
-            color: white;
+            background-color: rgba(187, 178, 178, 0.702); /* Green background color */
+            color: rgb(0, 0, 0);
             border: none;
             text-align: center;
             text-decoration: none;
@@ -63,8 +64,8 @@ label {
     <img src ="burchhh.jpg" class="center">
     <h2>International Burch University</h2>
     <h3>REGISTRATION FORM</h3>
-    <form action="register.php" method="POST">
-        <label for="username">Firstname:</label><br>
+    <form action="index.html" method="post"> 
+    <label for="username">Firstname:</label><br>
         <input type="text" id="username" name="username" placeholder="Enter your firstname" required></br>
         
         <div class="form-group1">
@@ -91,7 +92,10 @@ label {
             <label for="pob">Place of Birth:</label>
             <input type="text" id="pob" name="pob">
         </div>
-
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
         <div class="form-group">
             <label for="phone">Phone:</label>
             <input type="tel" id="phone" name="phone">
@@ -121,7 +125,6 @@ label {
             <input type="checkbox" id="remember" name="remember">
             <label for="remember">Receive notifications</label>
         </div>
-        
         <input type="submit" value="Register" class="register-btn">
     </form>
 </body>
